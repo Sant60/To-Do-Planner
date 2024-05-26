@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <nav>
+       <h1>To-Do Planner</h1> 
+    </nav>
+    <main>
+    <div class="container">
+      <center><h1>To-Do List</h1></center>
+      <div class="task-entry">
+        <input type="text" id="task-input" placeholder="Enter a new task" />
+        <select id="priority-select">
+
+          <option value="task">Select Type</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <input type="text" id="category-input" placeholder="Category" />
+        <input type="date" id="due-date-input" />
+        <button id="add-task-button">Add Task</button>
+      </div>
+      <ul id="task-list"></ul>
+      <ul class="color">
+        <li style="color: rgb(24, 210, 24)">low</li>
+        <li style="color: orange">medium</li>
+        <li style="color: red">hard</li>
+      </ul>
+    </div></main>
+    <script src="script.js"></script>
+  </body>
+</html>
